@@ -1,0 +1,55 @@
+{
+  "expo": {
+    "name": "react-native-softglobal",
+    "slug": "softglobal",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "runtimeVersion": {
+      "policy": "sdkVersion"
+    },
+    "plugins": [
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "usesCleartextTraffic": true,
+            "adaptiveIcon": {
+              "foregroundImage": "./assets/adaptive-icon.png",
+              "backgroundColor": "#ffffff"
+            },
+            "versionCode": 1,
+            "package": "com.jondebosco.softglobal"
+          },
+          "ios": {
+            "supportsTablet": true
+          }
+        }
+      ]
+    ],
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": ""
+      }
+    },
+    "owner": "jondebosco",
+    "android": {
+      "package": "com.jondebosco.softglobal"
+    }
+  }
+}
