@@ -31,7 +31,7 @@
               "backgroundColor": "#ffffff"
             },
             "versionCode": 1,
-            "package": "com.jondebosco.softglobal"
+            "package": "com.jonbullion.softglobal"
           },
           "ios": {
             "supportsTablet": true
@@ -44,12 +44,12 @@
     },
     "extra": {
       "eas": {
-        "projectId": ""
+        "projectId": "2bc2127a-ac7f-41d2-b104-c2abf42b937a"
       }
     },
-    "owner": "jondebosco",
+    "owner": "jonbullion",
     "android": {
-      "package": "com.jondebosco.softglobal"
+      "package": "com.jonbullion.softglobal"
     }
   }
 }

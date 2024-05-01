@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import {
   createDrawerNavigator,
   DrawerContentScrollView,
-  DrawerItemList,
+  // DrawerItemList,
   DrawerItem,
 } from "@react-navigation/drawer";
 import { SafeAreaProvider } from "react-native-safe-area-context";
@@ -24,7 +24,14 @@ export const MyDrawer = (props) => {
         <Drawer.Navigator
           // initialRouteName="Home"
           screenOptions={{ headerShown: false }}
-          drawerContent={(props) => <CustomDrawerContent {...props} />}
+          // drawerContent={(props) => <CustomDrawerContent {...props} />}
+          drawerContent={(props) => (
+            <View
+             style={{ flex: 1, backgroundColor: "#00BFFF" }}
+            >
+              <CustomDrawerContent {...props} />
+            </View>
+          )}
         >
           <Drawer.Screen
             name="HomeStack"
@@ -84,11 +91,11 @@ export const CustomDrawerContent = (props) => {
         </Text>
       </View>
 
-      <DrawerItemList {...props} />
+      {/* <DrawerItemList {...props} />
       <DrawerItem
         label="Goto Homepage"
         onPress={() => navigation.navigate("Home")}
-      />
+      /> */}
 
       <DrawerItem
         label={() => (
