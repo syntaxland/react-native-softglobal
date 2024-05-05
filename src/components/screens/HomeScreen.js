@@ -89,6 +89,7 @@ const HomeScreen = () => {
             width={300}
             height={150}
             autoPlay={true}
+            delay={5000}
             data={quotes}
             renderItem={renderQuoteItem}
           />
